@@ -13,5 +13,5 @@ vim.opt.hlsearch = false
 vim.opt.incsearch = true
 
 vim.opt.termguicolors = true
-vim.o.scrolloff = 8
+--vim.o.scrolloff = 8
 vim.o.syntax = 'enable'

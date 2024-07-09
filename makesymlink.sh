@@ -33,3 +33,4 @@ for file in $files; do
 done
 
 tmux source $dir/tmux/.tmux.conf
+echo "done"

@@ -46,3 +46,10 @@ vim.keymap.set("n", "<leader><C-j>", "<C-w>-5")
 vim.keymap.set("n", "<leader><C-k>", "<C-w>+5")
 vim.keymap.set("n", "<leader><C-h>", "<C-w><5")
 vim.keymap.set("n", "<leader><C-l>", "<C-w>>5")
+
+--NAVIGATION
+
+--move one line down
+vim.keymap.set("n", "<C-j>", "<C-e>");
+--move one line up
+vim.keymap.set("n", "<C-k>", "<C-y>");
