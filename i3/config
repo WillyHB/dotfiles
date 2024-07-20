@@ -50,7 +50,7 @@ bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec st
+bindsym $mod+Return exec alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -160,4 +160,13 @@ bindsym $mod+Ctrl+l resize grow width $var px or $var ppt
 bar {
         status_command i3status
 }
-exec_always feh --bg-scale /home/willy/Pictures/desktopbg/wallpaper.jpg
+exec_always feh --bg-scale /home/willy/Pictures/wallpaper.jpg
+
+bindsym $mod+Shift+i exec i3lock -c 000000
+
+
+
+
+
+
+
