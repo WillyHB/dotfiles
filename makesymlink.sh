@@ -10,7 +10,7 @@ dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
 configdir=~/.config
 
-files="nvim i3 tmux"    # list of files/folders to symlink in homedir
+files="nvim i3status i3 tmux"    # list of files/folders to symlink in homedir
 
 ##########
 
