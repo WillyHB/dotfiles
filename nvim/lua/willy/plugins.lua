@@ -11,12 +11,19 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
     lazypath,
   })
 end
-
 vim.opt.rtp:prepend(lazypath)
-require("lazy").setup('willy/plugins/')
+require("lazy").setup({{import = "willy/plugins/"}, {import = "willy/plugins/lsp"}})
 require('lualine').setup()
-require('hardtime').setup()
+require('mason').setup()
+require("mason-lspconfig").setup({
+            ensure_installed = {
+                "clangd",
+                "omnisharp",
+                "bashls",
+            },
+        })
 
+require('hardtime').setup()
 require('telescope').setup()
 
 local builtin = require("telescope.builtin")

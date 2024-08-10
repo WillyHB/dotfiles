@@ -12,7 +12,7 @@ vim.keymap.set("n", "<Leader>p", "o<Esc>p");
 vim.keymap.set("n", "<Leader>P", "O<Esc>p");
 --vim.keymap.set("x", "<leader>p", "\"_dP")
 --SEARCH AND REPLACE
-vim.g.mapleader = "\\"
+vim.g.mapleader = ","
 --Search for current word on line and replace
 vim.keymap.set("n", "<leader>s", ":s/\\<<C-r><C-w>\\>//gc<Left><Left><Left>")
 --Search for current word in file and replace
