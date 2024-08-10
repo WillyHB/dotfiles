@@ -163,11 +163,12 @@ bar {
 
 
 }
+
 exec_always feh --bg-scale /home/willy/Pictures/wallpaper.jpg
+exec_always tmux soure ~/.config/tmux/.tmux.conf
+exec_always redshift
 
 bindsym $mod+Shift+i exec i3lock -c 000000
-
-exec_always tmux soure ~/.config/tmux/.tmux.conf
 
 
 
