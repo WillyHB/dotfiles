@@ -41,7 +41,7 @@ return
           ['<C-p>'] = cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Insert }),
         }),
         sources = cmp.config.sources({
-          --{ name = 'nvim_lsp' },
+          { name = 'nvim_lsp' },
           { name = 'luasnip' }, -- For luasnip users.
         }, {
           { name = 'buffer' },
