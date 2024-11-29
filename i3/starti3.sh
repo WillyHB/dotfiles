@@ -1,5 +1,6 @@
 #!/bin/bash
+feh --bg-scale /home/willy/Pictures/wallpaper.jpg
+#i3lock -c FF0000
 
-alacritty -e cd "$(~/dotfiles)" || exit
-tmux source ~/.config/tmux/.tmux.conf
-alacritty -e tmux new -A -s config
+#ALWAYS PLACE LAST
+redshift

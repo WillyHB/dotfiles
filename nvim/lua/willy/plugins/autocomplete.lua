@@ -89,6 +89,7 @@ return
      require('lspconfig')['html'].setup {capabilities = capabilities}
      require('lspconfig')['cssls'].setup {capabilities = capabilities}
      require('lspconfig')['tsserver'].setup {capabilities = capabilities}
+     require('lspconfig')['ast_grep'].setup {capabilities = capabilities}
         end,
     
     }

@@ -20,6 +20,7 @@ return {
                     "html",
                 "cssls",
                 "tsserver",
+                "ast_grep",
                 --LINTERS
                 "cppcheck",
                 "htmlhint",
@@ -29,6 +30,7 @@ return {
                 "shellcheck",
                 "stylelint",
                 "hadolint",
+                "checkstyle",
             },
         })
     end,

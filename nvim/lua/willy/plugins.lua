@@ -15,13 +15,7 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({{import = "willy/plugins/"}, {import = "willy/plugins/lsp"}})
 require('lualine').setup()
 require('mason').setup()
-require("mason-lspconfig").setup({
-            ensure_installed = {
-                "clangd",
-                "omnisharp",
-                "bashls",
-            },
-        })
+require("mason-lspconfig").setup()
 
 require('hardtime').setup()
 require('telescope').setup()

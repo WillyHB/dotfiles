@@ -19,6 +19,7 @@ return
         bash = {"shellcheck"},
         css = {"stylelint"},
         docker = {"hadolint"},
+        java = {"checkstyle"},
     }
     end,
 }
