@@ -10,10 +10,15 @@ else
 fi
 
 languages=(dk gb)
+flags=(🇩🇰 🇬🇧)
 setxkbmap "${languages[${index}]}"
-notify-send "keyboard layout changed to ${languages[$index]}"
 
-let "index+=1"
+msgTag="myLanguage"
+dunstify -a "changeLang" -u normal -i keyboard -h string:x-dunst-stack-tag:$msgTag \
+     "Keyboard Layout set to ${languages[$index]} ${flags[$index]}"
+
+
+(( index+=1 ))
 
 if [ "$index" -ge ${#languages[@]} ] 
 then 
@@ -21,10 +26,5 @@ then
 fi
 echo "index=\"$index\"" > $var_file
 
-
-
-
-
-        
-
+canberra-gtk-play -i audio-volume-change -d "changeVolume"
 

@@ -1,6 +1,6 @@
 set $mod Mod4
 set $s_mod Shift
-set $wm_setting_font pango:monospace Semibold 9
+set $wm_setting_font pango:monospace Semibold 8
 set $wm_setting_gap_width 0
 set $wm_setting_gap_height 0
 set $wm_setting_border_size 1
@@ -16,7 +16,7 @@ set $wm_setting_app_compositor picom
 
 set $bar_setting_position            bottom
 set $bar_setting_mode                dock
-set $bar_setting_separator           "·|·" 
+set $bar_setting_separator           " @ " 
 set $bar_setting_statusCommand       i3status
 set $bar_setting_trayoutput          full
 
@@ -32,17 +32,17 @@ set $wm_color_border_inactive_bg     #282828
 set $wm_color_border_inactive_fg     #a89984
 set $wm_color_background             #FF0000
 
-set $bar_color_background            #282828
-set $bar_color_foreground            #A89984
-set $bar_color_statusline            #A89984
-set $bar_color_separator             #504945
+set $bar_color_background            #000000
+set $bar_color_foreground            #7aa2f7
+set $bar_color_statusline            #9aa5ce
+set $bar_color_separator             #24283b
 
-set $bar_color_workspace_focused_bg  #A89984
-set $bar_color_workspace_focused_fg  #282828
+set $bar_color_workspace_focused_bg  #24283b
+set $bar_color_workspace_focused_fg  #7aa2f7
 set $bar_color_workspace_active_bg   #FF0000
 set $bar_color_workspace_active_fg   #FF0000
-set $bar_color_workspace_inactive_bg #3c3836
-set $bar_color_workspace_inactive_fg #A89984
+set $bar_color_workspace_inactive_bg #1a1b26
+set $bar_color_workspace_inactive_fg #414868
 set $bar_color_workspace_urgent_bg   #CC241D
 set $bar_color_workspace_urgent_fg   #282828
 
