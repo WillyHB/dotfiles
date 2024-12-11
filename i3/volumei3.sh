@@ -9,7 +9,7 @@ volume="$(awk -F"[][]" '/Left:/ { print $2 }' <(amixer sget Master))"
 mute="$(awk -F"[][]" '/Left:/ { print $4 }' <(amixer sget Master))"
 if [[ $volume == "0%" || "$mute" == "off" ]]; then
     # Show the sound muted notification
-    dunstify -a "changeVolume" -u critical -i audio-volume-muted -h string:x-dunst-stack-tag:$msgTag "Volume muted" 
+    dunstify -a "changeVolume" -u normal -i audio-volume-muted -h string:x-dunst-stack-tag:$msgTag "Volume muted" 
 else
     if [ "$volume" \< "60%" ]; then if [ "$volume" \< "25%" ]; then icon=audio-volume-low; else icon=audio-volume-medium; fi;
     else icon=audio-volume-high;
@@ -20,4 +20,4 @@ else
 fi
 
 # Play the volume changed sound
-canberra-gtk-play -i audio-volume-change -d "changeVolume"
+#canberra-gtk-play -i audio-volume-change -d "changeVolume"

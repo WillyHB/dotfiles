@@ -11,7 +11,7 @@ set $wm_setting_key_right l
 
 set $wm_setting_app_terminal alacritty
 set $wm_setting_app_browser firefox
-set $wm_setting_app_launcher dmenu_run
+set $wm_setting_app_launcher "rofi -modi drun,run -show drun"
 set $wm_setting_app_compositor picom
 
 set $bar_setting_position            bottom
@@ -94,7 +94,6 @@ bindsym $mod+d exec --no-startup-id $wm_setting_app_launcher
 # A more modern dmenu replacement is rofi:
 #bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 #start i3-dmenu-desktop
-bindsym $mod+$s_mod+d exec --no-startup-id i3-dmenu-desktop
 
 # change focus
 bindsym $mod+$wm_setting_key_left focus left
