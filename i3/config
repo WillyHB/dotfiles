@@ -11,6 +11,7 @@ set $wm_setting_key_right l
 
 set $wm_setting_app_terminal alacritty
 set $wm_setting_app_browser firefox
+set $wm_file_manager thunar
 set $wm_setting_app_launcher "rofi -modi drun,run -show drun"
 set $wm_setting_app_compositor picom
 
@@ -86,6 +87,9 @@ bindsym $mod+Return exec $wm_setting_app_terminal
 #start web browser
 bindsym $mod+$s_mod+Return exec $wm_setting_app_browser
 
+#start filemanager
+bindsym $mod+e exec $wm_file_manager
+
 # kill focused window
 bindsym $mod+$s_mod+q kill
 
@@ -116,8 +120,8 @@ bindsym $mod+$s_mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+bindsym $mod+t layout tabbed
+bindsym $mod+w layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
