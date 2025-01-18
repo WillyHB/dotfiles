@@ -10,8 +10,8 @@ dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
 configdir=~/.config
 
-config_files="nvim i3status i3 dunst"    # list of files/folders to symlink in homedir
-home_files="tmux"
+config_files="nvim i3status i3 dunst tmux"    # list of files/folders to symlink in homedir
+home_files=""
 ##########
 
 # create dotfiles_old in homedir
@@ -39,5 +39,5 @@ for file in $home_files; do
     ln -s $dir/"$file"/ ~/"$file"
 done
 
-tmux source $dir/tmux/.tmux.conf
+#tmux source $dir/tmux/.tmux.conf
 echo "done"

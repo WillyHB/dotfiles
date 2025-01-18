@@ -17,7 +17,7 @@ require('lualine').setup()
 require('mason').setup()
 require("mason-lspconfig").setup()
 
-require('hardtime').setup()
+--require('hardtime').setup()
 require('telescope').setup()
 
 local builtin = require("telescope.builtin")

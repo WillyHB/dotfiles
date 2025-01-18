@@ -19,10 +19,12 @@ return {
                 "cmake",
                     "html",
                 "cssls",
-                "tsserver",
+                "ts_ls",
                 "ast_grep",
+                "bacon_ls",
                 --LINTERS
                 "cppcheck",
+                "bacon",
                 "htmlhint",
                 "cmakelint",
                 "eslint_d",

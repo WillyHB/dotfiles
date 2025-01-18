@@ -12,6 +12,7 @@ return
     lint.linters_by_ft = {
         javascript = {"eslint_d"},
         c = {"cppcheck"},
+        rust = {"bacon"},
         cpp = {"cppcheck"},
         html = {"htmlhint"},
         cmake = {"cmakelint"},

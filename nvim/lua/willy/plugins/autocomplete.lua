@@ -88,7 +88,7 @@ return
      require('lspconfig')['cmake'].setup {capabilities = capabilities}
      require('lspconfig')['html'].setup {capabilities = capabilities}
      require('lspconfig')['cssls'].setup {capabilities = capabilities}
-     require('lspconfig')['tsserver'].setup {capabilities = capabilities}
+     require('lspconfig')['ts_ls'].setup {capabilities = capabilities}
      require('lspconfig')['ast_grep'].setup {capabilities = capabilities}
         end,
     
