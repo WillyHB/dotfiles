@@ -1,5 +1,5 @@
 #!/bin/bash
-feh --bg-scale /home/willy/Pictures/wallpaper.jpg
+feh --bg-scale /home/willy/pictures/wallpaper.jpg
 #i3lock -c FF0000
 
 #ALWAYS PLACE LAST
