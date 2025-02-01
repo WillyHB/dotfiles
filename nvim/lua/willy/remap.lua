@@ -14,7 +14,7 @@ vim.keymap.set("n", "<Leader>P", "O<Esc>p");
 --SEARCH AND REPLACE
 vim.g.mapleader = ","
 --Search for current word on line and replace
-vim.keymap.set("n", "<leader>s", ":s/\\<<C-r><C-w>\\>//gc<Left><Left><Left>")
+vim.keymap.set("n", "<leader>sl", ":s/\\<<C-r><C-w>\\>//gc<Left><Left><Left>")
 --Search for current word in file and replace
 vim.keymap.set("n", "<leader>ss", ":%s/\\<<C-r><C-w>\\>//gc<Left><Left><Left>")
 --Search for current selection in line and replace
@@ -28,24 +28,27 @@ vim.keymap.set("n", "<leader>rr", ":%s//gc<Left><Left><Left>")
 vim.keymap.set("v", "<leader>r", ":s//gc<Left><Left><Left>")
 
 --BUFFERS/WINDOWS/TABS
-vim.g.mapleader = "n"
-vim.keymap.set("n", "<leader>h", "<C-w>h")
-vim.keymap.set("n", "<leader>j", "<C-w>j")
-vim.keymap.set("n", "<leader>k", "<C-w>k")
-vim.keymap.set("n", "<leader>l", "<C-w>l")
-vim.keymap.set("n", "<leader>o", "<C-w>s")
-vim.keymap.set("n", "<leader>p", "<C-w>v")
-vim.keymap.set("n", "<leader>q", "<C-w>q")
-vim.keymap.set("n", "<leader>H", "<C-w>H")
-vim.keymap.set("n", "<leader>J", "<C-w>J")
-vim.keymap.set("n", "<leader>K", "<C-w>K")
-vim.keymap.set("n", "<leader>L", "<C-w>L")
-vim.keymap.set("n", "<leader>w", "<C-w>w")
+vim.keymap.set("n", "<M-h>", "<C-w>h")
+vim.keymap.set("n", "<M-j>", "<C-w>j")
+vim.keymap.set("n", "<M-k>", "<C-w>k")
+vim.keymap.set("n", "<M-l>", "<C-w>l")
+vim.keymap.set("n", "<M-o>", "<C-w>s")
+vim.keymap.set("n", "<M-p>", "<C-w>v")
+vim.keymap.set("n", "<M-q>", "<C-w>q")
+vim.keymap.set("n", "<M-H>", "<C-w>H")
+vim.keymap.set("n", "<M-J>", "<C-w>J")
+vim.keymap.set("n", "<M-K>", "<C-w>K")
+vim.keymap.set("n", "<M-L>", "<C-w>L")
+vim.keymap.set("n", "<M-w>", "<C-w>w")
 
-vim.keymap.set("n", "<leader><C-j>", "<C-w>-5")
-vim.keymap.set("n", "<leader><C-k>", "<C-w>+5")
-vim.keymap.set("n", "<leader><C-h>", "<C-w><5")
-vim.keymap.set("n", "<leader><C-l>", "<C-w>>5")
+vim.keymap.set("n", "<C-l>", ":bnext<CR>")
+vim.keymap.set("n", "<C-h>", ":bprev<CR>")
+vim.keymap.set("n", "<C-q>", ":bd<CR>")
+
+--vim.keymap.set("n", "<", "<C-w>-5")
+--vim.keymap.set("n", "<leader><C-k>", "<C-w>+5")
+--vim.keymap.set("n", "<leader><C-h>", "<C-w><5")
+--vim.keymap.set("n", "<leader><C-l>", "<C-w>>5")
 
 --NAVIGATION
 

@@ -9,9 +9,9 @@ else
     echo "index=\"$index\"" > $var_file
 fi
 
-languages=(dk gb)
-flags=(🇩🇰 🇬🇧)
-setxkbmap "${languages[${index}]}"
+languages=(dk gb us)
+flags=(🇩🇰 🇬🇧 🇺🇸)
+setxkbmap "${languages[${index}]}" -option caps:escape
 
 msgTag="myLanguage"
 dunstify -a "changeLang" -u normal -i keyboard -h string:x-dunst-stack-tag:$msgTag \
