@@ -2,14 +2,14 @@ vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>e<leader>", vim.cmd.Ex)
 vim.keymap.set("v", "K", ":m '>-2<CR>gv=gv")
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
-vim.keymap.set("n",  "n", "nzzzv")
+vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "nzzzv")
 
 vim.keymap.set("n", "<Leader>o", "o<Esc>k")
 vim.keymap.set("n", "<Leader>O", "O<Esc>j")
 
-vim.keymap.set("n", "<Leader>p", "o<Esc>p");
-vim.keymap.set("n", "<Leader>P", "O<Esc>p");
+vim.keymap.set("n", "<Leader>p", "o<Esc>p")
+vim.keymap.set("n", "<Leader>P", "O<Esc>p")
 --vim.keymap.set("x", "<leader>p", "\"_dP")
 --SEARCH AND REPLACE
 vim.g.mapleader = ","
@@ -53,6 +53,15 @@ vim.keymap.set("n", "<C-q>", ":bd<CR>")
 --NAVIGATION
 
 --move one line down
-vim.keymap.set("n", "<C-j>", "<C-e>");
+vim.keymap.set("n", "<C-j>", "<C-e>")
 --move one line up
-vim.keymap.set("n", "<C-k>", "<C-y>");
+vim.keymap.set("n", "<C-k>", "<C-y>")
+
+---YANK/PASTE
+vim.keymap.set("n", "y", "\"+y")
+vim.keymap.set("n", "p", "\"+p")
+
+vim.keymap.set("n", ",y", "\"ay")
+vim.keymap.set("n", ",p", "\"ap")
+
+

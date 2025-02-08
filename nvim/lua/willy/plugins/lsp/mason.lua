@@ -12,16 +12,16 @@ return {
         mason_lspconfig.setup({
             ensure_installed = {
                 "clangd",
-                "omnisharp",
+                "csharp_ls",
                 "bashls",
                 "lua_ls",
                 "dockerls",
                 "cmake",
-                    "html",
+                "html",
                 "cssls",
                 "ts_ls",
                 "ast_grep",
-                "bacon_ls",
+                "rust_analyzer",
                 --LINTERS
                 "cppcheck",
                 "bacon",

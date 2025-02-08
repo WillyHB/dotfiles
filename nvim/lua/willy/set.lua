@@ -8,7 +8,6 @@ vim.opt.wrap = true;
 vim.g.showbreak = '↪'
 vim.opt.smartindent = true;
 
-
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
 

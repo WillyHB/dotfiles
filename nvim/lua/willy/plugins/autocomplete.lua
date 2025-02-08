@@ -1,8 +1,7 @@
 return
 {
     {
-
-    "hrsh7th/cmp-nvim-lsp",
+        "hrsh7th/cmp-nvim-lsp",
     },
 
     {
@@ -77,12 +76,12 @@ return
         }),
         matching = { disallow_symbol_nonprefix_matching = false }
       })
-    
+
     --  -- Set up lspconfig.
     local capabilities = require('cmp_nvim_lsp').default_capabilities()
     --  -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
+     require('lspconfig')['csharp_ls'].setup {capabilities = capabilities}
      require('lspconfig')['clangd'].setup {capabilities = capabilities}
-     require('lspconfig')['omnisharp'].setup {capabilities = capabilities}
      require('lspconfig')['bashls'].setup {capabilities = capabilities}
      require('lspconfig')['lua_ls'].setup {capabilities = capabilities}
      require('lspconfig')['dockerls'].setup {capabilities = capabilities}
@@ -91,7 +90,7 @@ return
      require('lspconfig')['cssls'].setup {capabilities = capabilities}
      require('lspconfig')['ts_ls'].setup {capabilities = capabilities}
      require('lspconfig')['ast_grep'].setup {capabilities = capabilities}
+     require('lspconfig')['rust_analyzer'].setup {capabilities = capabilities}
         end,
-    
     }
 }
