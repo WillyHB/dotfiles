@@ -60,8 +60,9 @@ vim.keymap.set("n", "<C-k>", "<C-y>")
 ---YANK/PASTE
 vim.keymap.set("n", "y", "\"+y")
 vim.keymap.set("n", "p", "\"+p")
+vim.keymap.set("n", "d", "\"+yyd");
 
 vim.keymap.set("n", ",y", "\"ay")
 vim.keymap.set("n", ",p", "\"ap")
-
+vim.keymap.set("n", ",d", "\"ayyd")
 
