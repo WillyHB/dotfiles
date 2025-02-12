@@ -81,7 +81,12 @@ return
     local capabilities = require('cmp_nvim_lsp').default_capabilities()
     --  -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
      require('lspconfig')['csharp_ls'].setup {capabilities = capabilities}
-     require('lspconfig')['clangd'].setup {capabilities = capabilities}
+     require('lspconfig')['clangd'].setup {
+         capabilities = capabilities,
+         init_options = {
+            fallbackFlags = {'--std=c23'}
+         },
+     }
      require('lspconfig')['bashls'].setup {capabilities = capabilities}
      require('lspconfig')['lua_ls'].setup {capabilities = capabilities}
      require('lspconfig')['dockerls'].setup {capabilities = capabilities}
