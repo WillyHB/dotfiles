@@ -20,13 +20,15 @@ if ! [ -f "$1" ]; then
     exit 2;
 fi
 
-filename=$(echo "$1" | awk -F '.' '{ print $1 }')
 extension=$(echo "$1" | awk -F '.' '{ print $2 }')
 
 if ! [ "$extension" = "c" ] || [ "$extension" = "h" ]; then
     echo "Please specify a c source or header file"
     exit 3;
 fi
+
+filename=$(echo "$1" | awk -F '.' '{ print $1 }')
+
 
 gcc -o "$filename" "$1" -Wall
 if [ $run -eq 1 ]; then
