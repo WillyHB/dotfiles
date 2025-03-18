@@ -1,9 +1,11 @@
 #!/bin/bash
 
 run=0;
-while getopts "r" opt; do
+wall=0;
+while getopts "rw" opt; do
     case $opt in
     r) run=1 ;;
+    w) wall=1;;
     \?) echo "invalid option man";;
     esac
 done
@@ -30,7 +32,12 @@ fi
 filename=$(echo "$1" | awk -F '.' '{ print $1 }')
 
 
-gcc -o "$filename" "$1" -Wall
+if [ $wall -eq 1 ]; then
+    gcc -o "$filename" "$1" -Wall
+else 
+    gcc -o "$filename" "$1" 
+fi
+
 if [ $run -eq 1 ]; then
     ./"$filename"
 else

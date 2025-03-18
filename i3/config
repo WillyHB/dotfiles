@@ -27,8 +27,8 @@ set $bar_setting_trayoutput          full
 
 #####
 
-set $wm_color_border_active_bg       #A89984
-set $wm_color_border_active_fg       #282828
+set $wm_color_border_active_bg       #377eb3
+set $wm_color_border_active_fg       #FF0000
 set $wm_color_border_inactive_bg     #282828
 set $wm_color_border_inactive_fg     #a89984
 set $wm_color_background             #FF0000
