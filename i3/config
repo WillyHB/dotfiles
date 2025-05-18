@@ -11,6 +11,7 @@ set $wm_setting_key_right l
 
 set $wm_setting_app_terminal alacritty
 set $wm_setting_app_browser firefox
+set $wm_setting_app_music spotify
 set $wm_file_manager thunar
 set $wm_setting_app_launcher "rofi -modi drun,run -show drun"
 set $wm_setting_app_compositor picom
@@ -89,6 +90,8 @@ bindsym $mod+$s_mod+Return exec $wm_setting_app_browser
 
 #start filemanager
 bindsym $mod+e exec $wm_file_manager
+
+bindsym $mod+$s_mod+s $wm_setting_app_music
 
 # kill focused window
 bindsym $mod+$s_mod+q kill
