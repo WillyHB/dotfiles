@@ -6,7 +6,10 @@ if [ -f /etc/bashrc ]; then
     . /etc/bashrc
 fi
 
+#aliases
 alias go='cd $(.go)'
+alias ls='ls --color=auto'
+
 # User specific environment
 if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]; then
     PATH="$HOME/.local/bin:$HOME/bin:$PATH"
