@@ -1,6 +1,8 @@
-﻿# .bashrc
+﻿#!/bin/bash
+# .bashrc
 
 export DISPLAY=:0.0
+export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
 # Source global definitions
 if [ -f /etc/bashrc ]; then
     . /etc/bashrc

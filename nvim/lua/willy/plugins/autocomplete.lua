@@ -84,8 +84,9 @@ return
      require('lspconfig')['clangd'].setup {
          capabilities = capabilities,
          init_options = {
-            fallbackFlags = {'--std=c23'}
+            fallbackFlags = {'--std=c99'}
          },
+         cmd = {'clangd', '--background-index', '--clang-tidy'}
      }
      require('lspconfig')['bashls'].setup {capabilities = capabilities}
      require('lspconfig')['lua_ls'].setup {capabilities = capabilities}
@@ -96,6 +97,7 @@ return
      require('lspconfig')['ts_ls'].setup {capabilities = capabilities}
      require('lspconfig')['ast_grep'].setup {capabilities = capabilities}
      require('lspconfig')['rust_analyzer'].setup {capabilities = capabilities}
+	 require('lspconfig')['gdscript'].setup { capabilities = capabilities }
         end,
     }
 }

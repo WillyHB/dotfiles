@@ -11,6 +11,7 @@ return {
 
         mason_lspconfig.setup({
             ensure_installed = {
+				"gdtoolkit",
                 "clangd",
                 "csharp_ls",
                 "bashls",
@@ -23,7 +24,7 @@ return {
                 "ast_grep",
                 "rust_analyzer",
                 --LINTERS
-                "cppcheck",
+                "clang_tidy",
                 "bacon",
                 "htmlhint",
                 "cmakelint",
