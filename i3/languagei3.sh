@@ -1,5 +1,10 @@
 #!/bin/bash
 
+#TO CHANGE PERMANENTLY THE KEYBOARD LAYOUT DO:
+#EXAMPLE:
+#localectl status				To check the status of the current keyboard layout
+#localectl set-keymap --no-convert us
+#localectl set-x11-keymap us
 var_file="var.sh"
 if [[ -f $var_file ]]; then
     source $var_file

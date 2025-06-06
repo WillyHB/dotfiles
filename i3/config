@@ -19,7 +19,7 @@ set $wm_setting_app_compositor picom
 set $bar_setting_position            bottom
 set $bar_setting_mode                dock
 set $bar_setting_separator           " @ " 
-set $bar_setting_statusCommand       i3status
+set $bar_setting_statusCommand       my_i3status.sh
 set $bar_setting_trayoutput          full
 
 ####### COLOUR PALETTE ########

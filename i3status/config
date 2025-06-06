@@ -5,6 +5,7 @@ general {
 
 }
 
+order += "tztime holder_graphics_mode"
 order += "disk /"
 order += "memory"
 order += "volume master"
@@ -39,4 +40,9 @@ tztime local {
 volume master {
  format = "AUDIO %volume"   
  format_muted = "AUDIO muted"
+}
+
+tztime holder_graphics_mode {
+	format = "holder_graphics_mode"
+
 }
