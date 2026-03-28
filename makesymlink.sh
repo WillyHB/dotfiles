@@ -10,8 +10,8 @@ dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
 configdir=~/.config
 
-config_files="nvim i3status i3 dunst tmux"    # list of files/folders to symlink in homedir
-home_files=".bashrc bin .profile .Xresources"
+config_files="nvim dunst tmux xremap waybar"    # list of files/folders to symlink in homedir
+home_files=".bashrc bin .profile"
 ##########
 
 # create dotfiles_old in homedir

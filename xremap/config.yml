@@ -1,0 +1,24 @@
+modmap:
+  - name: Caps
+    remap:
+      Capslock: esc
+
+keymap:
+  - name: Firefox
+    application: 
+      only: org.mozilla.firefox
+    remap:
+      Alt-Shift-j: Alt-9
+      Alt-Shift-k: Alt-1
+      Ctrl-Shift-j: Ctrl-Shift-PageDown
+      Ctrl-Shift-k: Ctrl-Shift-PageUp
+      Alt-j: Ctrl-Tab
+      Alt-down: Ctrl-Tab
+      Alt-k: Ctrl-Shift-Tab
+      Alt-up: Ctrl-Shift-Tab
+      Alt-h: Alt-left
+      Alt-l: Alt-right
+      Alt-n: Ctrl-T
+      Alt-f: Ctrl-L
+      Alt-q: Ctrl-W
+

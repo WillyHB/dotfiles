@@ -1,8 +1,21 @@
+vim.g.clipboard = {
+    name = "wl-clipboard",
+    copy = {
+        ["+"] = "wl-copy -n",
+        ["*"] = "wl-copy -n",
+    },
+    paste = {
+        ["+"] = "wl-paste -n",
+        ["*"] = "wl-paste -n",
+    },
+    cache_enabled = 0,
+}
+
 vim.opt.relativenumber = true
 vim.opt.number = true;
-vim.opt.tabstop = 4
-vim.opt.softtabstop = 4
-vim.opt.shiftwidth = 4
+vim.opt.tabstop = 8
+vim.opt.softtabstop = 8
+vim.opt.shiftwidth = 8        
 vim.opt.expandtab = false
 vim.opt.wrap = true;
 vim.g.showbreak = '↪'

@@ -1,8 +1,4 @@
-﻿#!/bin/bash
-# .bashrc
-
-export DISPLAY=:0.0
-export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
+﻿export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
 # Source global definitions
 if [ -f /etc/bashrc ]; then
     . /etc/bashrc
@@ -11,6 +7,9 @@ fi
 #aliases
 alias go='cd $(.go)'
 alias ls='ls --color=auto'
+function cd {
+	builtin cd "$@" && ls
+}
 
 # User specific environment
 if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]; then
@@ -34,3 +33,7 @@ if [ -d ~/.bashrc.d ]; then
 fi
 unset rc
 . "$HOME/.cargo/env"
+
+export XMODIFIERS=@im=fcitx
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx

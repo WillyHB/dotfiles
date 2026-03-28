@@ -63,7 +63,7 @@ vim.keymap.set("n", ",p", "\"+p")
 vim.keymap.set("n", ",d", "\"+yyd");
 vim.keymap.set("v", ",y", "\"+y")
 vim.keymap.set("v", ",p", "\"+p")
-vim.keymap.set("v", ",d", "\"+yyd");
+vim.keymap.set("v", ",d", "\"+d");
 
 vim.keymap.set("n", "]g", vim.diagnostic.goto_next)
 vim.keymap.set("n", "[g", vim.diagnostic.goto_prev)
