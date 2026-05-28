@@ -1,0 +1,17 @@
+-- Panes
+vim.keymap.set("n", "<M-h>", "<C-w>h")
+vim.keymap.set("n", "<M-j>", "<C-w>j")
+vim.keymap.set("n", "<M-k>", "<C-w>k")
+vim.keymap.set("n", "<M-l>", "<C-w>l")
+vim.keymap.set("n", "<M-o>", "<C-w>s")
+vim.keymap.set("n", "<M-p>", "<C-w>v")
+vim.keymap.set("n", "<M-q>", "<C-w>q")
+vim.keymap.set("n", "<M-H>", "<C-w>H")
+vim.keymap.set("n", "<M-J>", "<C-w>J")
+vim.keymap.set("n", "<M-K>", "<C-w>K")
+vim.keymap.set("n", "<M-L>", "<C-w>L")
+vim.keymap.set("n", "<M-w>", "<C-w>w")
+
+-- Buffers
+vim.keymap.set("n", "<C-l>", ":bnext<CR>")
+vim.keymap.set("n", "<C-h>", ":bprev<CR>")

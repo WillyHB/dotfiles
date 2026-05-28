@@ -68,3 +68,7 @@ vim.keymap.set("v", ",d", "\"+d");
 vim.keymap.set("n", "]g", vim.diagnostic.goto_next)
 vim.keymap.set("n", "[g", vim.diagnostic.goto_prev)
 
+vim.keymap.set('n', '<M-f>', "<cmd>lua require('telescope.builtin').find_files({hidden = true})<cr>")
+vim.keymap.set('n', '<M-g>f', "<cmd>Telescope live_grep<cr>")
+vim.keymap.set('n', '<M-g>b', "<cmd>Telescope buffers<cr>")
+vim.keymap.set('n', '<M-g>h', "<cmd>Telescope help_tags<cr>")

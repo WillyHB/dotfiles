@@ -13,7 +13,7 @@ set $wm_setting_key_right l
 set $wm_setting_app_terminal alacritty
 set $wm_setting_app_browser firefox
 set $wm_file_manager thunar
-set $wm_setting_app_launcher "wofi --show drun -i"
+set $wm_setting_app_launcher "wofi --show drun"
 
 set $bar_setting_position            bottom
 set $bar_setting_mode                dock
@@ -47,8 +47,8 @@ bindsym XF86AudioLowerVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-
 bindsym XF86AudioMute exec wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
 bindsym XF86AudioMicMute exec wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle
 
-bindsym XF86MonBrightnessUp exec brightnessctl set +3%
-bindsym XF86MonBrightnessDown exec brightnessctl set 3%-
+bindsym XF86MonBrightnessUp exec brightnessctl set +5%
+bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -70,7 +70,7 @@ bindsym $mod+$s_mod+q kill
 # exit i3 (logs you out of your X session)
 bindsym $mod+$s_mod+e exec sway exit
 # lock screen
-bindsym $mod+$s_mod+i exec systemctl suspend
+bindsym $mod+$s_mod+i exec swaylock -c 000000FF
 
 ######### Focus #########
 
@@ -210,8 +210,3 @@ client.unfocused        $wm_color_border_inactive_bg $wm_color_border_inactive_b
 client.urgent           $wm_color_border_inactive_bg $wm_color_border_inactive_bg $wm_color_border_inactive_fg $wm_color_border_inactive_bg $wm_color_border_inactive_bg
 client.placeholder      $wm_color_border_inactive_bg $wm_color_border_inactive_bg $wm_color_border_inactive_fg $wm_color_border_inactive_bg $wm_color_border_inactive_bg
 client.background       $wm_color_background
-
-exec_always swayidle -w before-sleep 'swaylock -f -c FFFFFF'
-exec_always $HOME/.config/sway/startsway.sh 
-#bindsym$mod+Print exec --no-startup-id "maim-g 800x1150+1000+400 ~/Pictures/screenshot_$(date +%Y-%m-%d_%H-%M-%S).png"
-

@@ -73,7 +73,6 @@
 /* Text and border colors for modules */
 @define-color mode-color @orange;
 @define-color mpd-color @magenta;
-@define-color weather-color @magenta;
 @define-color playerctl-color @magenta;
 @define-color clock-color @blue;
 @define-color cpu-color @green;
@@ -89,7 +88,7 @@
 @define-color pulseaudio-color @orange;
 @define-color pulseaudio-muted-color @red;
 @define-color backlight-color @yellow;
-@define-color disk-color @cyan;
+@define-color disk-color @green;
 @define-color uptime-color @green;
 @define-color updates-color @orange;
 @define-color quote-color @green;
@@ -113,7 +112,7 @@ window#waybar {
 
 
 /* Common module styling with border-bottom */
-#mode, #mpd, #custom-weather, #custom-playerctl, #clock, #cpu,
+#custom-tuned, #mode, #mpd, #custom-weather, #custom-playerctl, #clock, #cpu,
 #memory, #temperature, #battery, #network, #pulseaudio,
 #backlight, #disk, #custom-uptime, #custom-updates, #custom-quote,
 #idle_inhibitor, #tray {
@@ -164,9 +163,9 @@ window#waybar {
     border-bottom-color: transparent;
 }
 
-#custom-weather {
-    color: @weather-color;
-    border-bottom-color: @weather-color;
+#custom-tuned {
+    color: @battery-color;
+    border-bottom-color: @battery-color;
 }
 
 #custom-playerctl {
