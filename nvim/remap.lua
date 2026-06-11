@@ -13,5 +13,5 @@ vim.keymap.set("n", "<M-L>", "<C-w>L")
 vim.keymap.set("n", "<M-w>", "<C-w>w")
 
 -- Buffers
-vim.keymap.set("n", "<C-l>", ":bnext<CR>")
-vim.keymap.set("n", "<C-h>", ":bprev<CR>")
+vim.keymap.set("n", "<C-h>", ":bp<CR>", { silent = true })
+vim.keymap.set("n", "<C-l>", ":bn<CR>", { silent = true })
