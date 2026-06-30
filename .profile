@@ -25,3 +25,4 @@ export VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/intel_icd.x86_64.json
 #fi
 
 export STM32CubeMX_PATH=/home/willy/STM32CubeMX
+. "/home/willy/.deno/env"

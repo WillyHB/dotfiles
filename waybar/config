@@ -6,7 +6,7 @@
     "margin": 0,
     "modules-left": ["sway/workspaces","sway/window"],
         "modules-center": [],                                                                           //battery   //disk     // uptime      //updates        // systray
-    "modules-right": ["pulseaudio", "backlight", "memory", "custom/tuned", "battery", "disk"], // network 
+    "modules-right": ["pulseaudio", "backlight", "memory", "custom/envy", "custom/tuned", "battery", "disk"], // network 
 
     "sway/workspaces": {
         "disable-scroll": true,
@@ -36,6 +36,12 @@
     "custom/tuned": {
 	    "format": "{}",
 	    "exec": "tuned-adm active | awk '{print $NF}'",
+	    "interval": 5,
+    },
+
+    "custom/envy": {
+	    "format": "{}",
+	    "exec": "envycontrol -q",
 	    "interval": 5,
     },
 

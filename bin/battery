@@ -1,0 +1,19 @@
+#!/bin/bash
+
+if [ $1 = "get" ]; then
+	cat /sys/class/power_supply/BAT0/charge_control_end_threshold
+elif [ $1 = "set" ]; then
+	if [ $2 -lt 0 ]; then
+		echo "limit cannot be less than 0"
+		exit 1;
+	fi
+
+	if [ $2 -gt 100 ]; then
+		echo "limit cannot be greater than 100"
+		exit 2
+	fi
+
+	echo $2 | sudo tee /sys/class/power_supply/BAT0/charge_control_end_threshold
+else 
+	echo "Usage: $0 [get/set X]"
+fi

@@ -1,4 +1,4 @@
-﻿# Source global definitions
+# Source global definitions
 if [ -f /etc/bashrc ]; then
     . /etc/bashrc
 fi
@@ -41,3 +41,4 @@ export XDG_CURRENT_DESKTOP=sway
 
 export PATH="/home/willy/.local/stm32cube/bin:$PATH"
 export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
+. "/home/willy/.deno/env"

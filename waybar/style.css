@@ -112,7 +112,7 @@ window#waybar {
 
 
 /* Common module styling with border-bottom */
-#custom-tuned, #mode, #mpd, #custom-weather, #custom-playerctl, #clock, #cpu,
+#custom-envy, #custom-tuned, #mode, #mpd, #custom-weather, #custom-playerctl, #clock, #cpu,
 #memory, #temperature, #battery, #network, #pulseaudio,
 #backlight, #disk, #custom-uptime, #custom-updates, #custom-quote,
 #idle_inhibitor, #tray {
@@ -164,6 +164,11 @@ window#waybar {
 }
 
 #custom-tuned {
+    color: @battery-color;
+    border-bottom-color: @battery-color;
+}
+
+#custom-envy {
     color: @battery-color;
     border-bottom-color: @battery-color;
 }
